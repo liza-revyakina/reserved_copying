@@ -21,4 +21,3 @@
 ```
 $ pip install -r requirements.txt
 ```
-testgit st
