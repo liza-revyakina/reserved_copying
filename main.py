@@ -41,8 +41,8 @@ class VK:
             height = [each['height'] for i, each in enumerate(item['sizes'])]
             if max(height) == 0:
                 for n, letter in enumerate(types):
-                    idx = [i for i, each in enumerate(item['sizes']) if item['sizes'][i]['type'] == letter][0]
-                    if idx == letter:
+                    idx = [i for i, each in enumerate(item['sizes']) if item['sizes'][i]['type'] == types[n]][0]
+                    if item['sizes'][idx]['type'] == letter:
                         break
                     else:
                         continue
