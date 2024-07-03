@@ -18,5 +18,5 @@ def create_and_upload_file():
 
             print(f'Файл {file_name} загружен на GoogleDrive...')
     except Exception as _ex:
-        print('Возникла ошибка')
+        print('Возникла ошибка', _ex)
 
